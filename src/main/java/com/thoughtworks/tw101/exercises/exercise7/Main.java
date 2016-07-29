@@ -8,5 +8,11 @@ public class Main {
 
     public static void main(String[] args) {
 
+        GenerateRandomNumber theNumber = new GenerateRandomNumber();
+        System.out.println(theNumber.OneTo100());
+
+        UserGuess userGuess = new UserGuess();
+        System.out.println(userGuess.TakeUserGuess());
     }
+
 }
