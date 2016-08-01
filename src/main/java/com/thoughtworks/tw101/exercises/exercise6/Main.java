@@ -9,28 +9,23 @@ package com.thoughtworks.tw101.exercises.exercise6;
 // * Trolls are named “Troll”, have 40 hit points and only take half damage
 
 public class Main {
-
     public static void main(String[] args) {
-        Troll troll1 = new Troll();
-        Orc orc1 = new Orc();
+        Orcs orc1 = new Orcs();
+        Trolls troll1 = new Trolls();
 
         Monster[] monsters = {
-                new Orc(),
-                new Troll()
-
+                new Orcs(),
+                new Trolls()
         };
 
+        orc1.reportStatus("orc1", orc1.hitpoints);
+        troll1.reportStatus("troll1", troll1.hitpoints);
 
-//        monsters[1].reportStatus("monsters[1]", orc1.hitpoints);
+        orc1.takeDamage(orc1, 10);
+        troll1.takeDamage(troll1, 10);
 
-//        orc1.reportStatus("orc1", orc1.hitpoints);
-//        troll1.reportStatus("troll1", troll1.hitpoints);
-//
-//        orc1.takeDamage(orc1, 10);
-//        troll1.takeDamage(troll1, 10);
-//
-//        orc1.reportStatus("orc1", orc1.hitpoints);
-//        troll1.reportStatus("troll1", troll1.hitpoints);
+        orc1.reportStatus("orc1", orc1.hitpoints);
+        troll1.reportStatus("troll1", troll1.hitpoints);
 
     }
 }
